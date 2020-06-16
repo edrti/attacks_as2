@@ -10,4 +10,8 @@ server_url = "http://aoi.ise.bgu.ac.il/encrypt?user={0}&difficulty={1}".format(u
 download_save_traces(server_url, number_of_power_traces, filename)
 file_lines = load_file(filename)
 traces = parse_time_stamps(file_lines)
-plaintexts = parse_plaintexts(file_lines)
+plaintexts = parse_plaintexts(file_lines) #TODO: check correctness
+
+key = []
+for i in range(16):
+    key.append()
